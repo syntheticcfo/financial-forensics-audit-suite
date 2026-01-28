@@ -67,6 +67,10 @@ The CSV files in `/data_samples/` contain the first **500 rows** of the Platinum
 
 Because the specific forensic injections (e.g., Kiting events, SoD conflicts) are distributed throughout the full transaction ledger, running the Audit Bot on the sample data will not reproduce the full fraud findings.
 
+**Note on File Naming:**
+The sample files in `/data_samples/` are prefixed with `SAMPLE_` to distinguish them from the full production dataset.
+To run the `integrator.py` scripts against these samples, please rename them to match the expected production filenames (e.g., remove `SAMPLE_` prefix).
+
 **How to Evaluate:**
 
 1.  **Code Validation (The "How"):**
